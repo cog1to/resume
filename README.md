@@ -4,7 +4,12 @@ My resume written in LaTeX. Feel free to use and modify as you wish.
 
 ## Compilation
 
-`pdflatex resume.tex`
+Requires basic TeX-Live installation and `fontawesome` package.
+
+```
+tlmgr install fontawesome
+pdflatex resume.tex
+```
 
 ## Used packages
 
