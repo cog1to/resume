@@ -1,6 +1,6 @@
 # Resume
 
-My resume written in LaTeX v1.0.
+My resume written in LaTeX. Feel free to use and modify as you wish.
 
 ## Compilation
 
