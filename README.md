@@ -20,3 +20,6 @@ pdflatex resume.tex
 - hyperref
 - enumitem
 
+## Credits
+
+Mad props to Leeren Chang (http://leerenchang.com) for the inspiration. I basically just saw his resume and got an idea to do something similar myself.
