@@ -4,7 +4,7 @@ My resume written in LaTeX. Feel free to use and modify as you wish.
 
 ## Compilation
 
-Requires basic TeX-Live installation and `fontawesome` package.
+Requires basic TeX-Live installation and `fontawesome`+`enumitem` packages.
 
 ```
 tlmgr install fontawesome
