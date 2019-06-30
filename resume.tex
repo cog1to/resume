@@ -45,6 +45,7 @@
 \newcommand*{\email}[1]{\gdef\emailtext{#1}}
 \newcommand*{\skype}[1]{\gdef\skypetext{#1}}
 \newcommand*{\linkedin}[1]{\gdef\linkedintext{#1}}
+\newcommand*{\location}[1]{\gdef\locationtext{#1}}
 
 \renewcommand\maketitle{
   {\setstretch{1.2}
@@ -65,6 +66,12 @@
       \ifdefined\linkedintext
         \faLinkedin \hspace{0.1cm} \linkedintext
 
+      \fi
+    \end{center}
+
+    \begin{center}
+      \ifdefined\locationtext
+        \faHome \hspace{0.1cm} \locationtext
       \fi
     \end{center}
   }
@@ -121,6 +128,7 @@
 \github{https://gihtub.com/cogito}
 \email{sorryforbadname@gmail.com}
 \skype{skype://rogachev.alex}
+\location{Ivanovo, Russia}
 
 % Title
 \maketitle
