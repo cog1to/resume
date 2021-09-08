@@ -4,8 +4,12 @@
 % GLOBAL SETTINGS
 % ---------------------------------------------------------
 
+% Colors
+\usepackage[dvipsnames]{xcolor}
+\definecolor{burgundy}{RGB}{85, 28, 48}
+
 % Icons
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 
 % Page geometry
 \usepackage{geometry}
@@ -23,6 +27,7 @@
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
+  urlcolor=burgundy,
 }
 
 % List customization
@@ -44,6 +49,7 @@
 \newcommand*{\github}[1]{\gdef\githubtext{#1}}
 \newcommand*{\email}[1]{\gdef\emailtext{#1}}
 \newcommand*{\skype}[1]{\gdef\skypetext{#1}}
+\newcommand*{\telegram}[1]{\gdef\telegramtext{#1}}
 \newcommand*{\linkedin}[1]{\gdef\linkedintext{#1}}
 \newcommand*{\location}[1]{\gdef\locationtext{#1}}
 \newcommand*{\phone}[1]{\gdef\phonetext{#1}}
@@ -55,19 +61,22 @@
     }
     \begin{center}
       \ifdefined\emailtext
-        \faEnvelopeO \hspace{0.1cm} \emailtext \hspace{0.1cm}
+        \faIcon{envelope} \hspace{0.1cm} \href{mailto://\emailtext}{\emailtext} \hspace{0.1cm}
       \fi
       \ifdefined\githubtext
-        \faGithub \hspace{0.1cm} \githubtext \hspace{0.1cm}
+        \faIcon{github} \hspace{0.1cm} \href{\githubtext}{\githubtext} \hspace{0.1cm}
       \fi
       \ifdefined\skypetext
-        \faSkype \hspace{0.1cm} \skypetext \hspace{0.1cm}
+        \faIcon{skype} \hspace{0.1cm} \href{\skypetext}{\skypetext} \hspace{0.1cm}
 
+      \fi
+      \ifdefined\telegramtext
+        \faIcon{telegram-plane} \hspace{0.1cm} \href{https://t.me/\telegramtext}{@\telegramtext} \hspace{0.1cm}
       \fi
       \ifdefined\linkedintext
-        \faLinkedin \hspace{0.1cm} \linkedintext
-
+        \faIcon{linkedin} \hspace{0.1cm} \href{\linkedintext}{\linkedintext}
       \fi
+
     \end{center}
 
     \begin{center}
@@ -132,7 +141,8 @@
 \applicant{Alexander Rogachev}
 \github{https://github.com/cog1to}
 \email{sorryforbadname@gmail.com}
-\skype{skype://rogachev.alex}
+% \skype{skype://rogachev.alex}
+\telegram{cog1to}
 \location{Ivanovo, Russia}
 \phone{+7-915-817-2792}
 
@@ -159,7 +169,7 @@ Mid/Senior iOS Developer
 }
 \vspace{1ex}
 
-\cvparagraph{Akvelon}{Senior iOS Developer \& SDET}{2014 - Present}
+\cvparagraph{Akvelon}{Senior iOS Developer \& SDET}{2014 - 2019}
 \cvlist{
   \item Leading the development of an iOS client for Intapp product family [\href{https://itunes.apple.com/us/app/intapp/id1052877767}{link}], integrating multiple back-end services in a single mobile app.
   \item Maintaining and expanding API server code for one of the Intapp's products written in ASP.NET MVC.
@@ -182,9 +192,9 @@ Mid/Senior iOS Developer
 \cvsection{Skills}
 \cvtable{
   \textbf{Main languages:} & Swift, Objective C \\
-  \textbf{Secondary languages:} & Java, C\#, JS \\
+  \textbf{Secondary languages:} & C, Java, Go, JS, C\# \\
   \textbf{Main platform:} & iOS \\
-  \textbf{Frameworks/Libraries/Tools:} & MVC, MVP, MVVM, UIKit, CoreData, RxSwift, Realm, AFNetworking, Carthage, CocoaPods, Appium, XCTest, SQL, Bash, Git, Mercurial, Jira, Xcode, Instruments, ...
+  \textbf{Frameworks/Libraries/Tools:} & MVC, MVP, MVVM, VIPER, UIKit, CoreData, SwiftUI, RxSwift, Alamofire, Carthage, CocoaPods, Appium, XCTest, SQL, Bash, Git, Mercurial, Jira, Xcode, Instruments, ...
 }
 
 % Languages
