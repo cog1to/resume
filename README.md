@@ -1,20 +1,20 @@
-# Resume
+# Résumé
 
-My resume written in LaTeX. Feel free to use and modify as you wish.
+My résumé written in LaTeX. Feel free to use and modify as you wish.
 
 ## Compilation
 
 Requires basic TeX-Live installation and `fontawesome`+`enumitem` packages.
 
 ```
-tlmgr install fontawesome
+tlmgr install fontawesome5
 pdflatex resume.tex
 ```
 
 ## Used packages
 
 - geometry
-- fontawesome
+- fontawesome5
 - fancyhdr
 - setspace
 - hyperref
